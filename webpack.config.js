@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
 			{
-				test: /\.js$/,
+				test: /\.(js|ts)x?$/,
 				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader',
@@ -20,15 +20,26 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(sa|sc|c)ss$/,
+				test: /\.(sa|sc|c)ss$/i,
 				exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'sass-loader']
 			},	
-			{
-        test: /\.(png|svg|jpe?g|gif)$/,
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader'
+          }
+        ]
+      },
+      {
+        test: /\.(jpe?g|png|svg|gif|ico|webp|eot|ttf|woff|woff2|pdf|mp4|webm)$/,
         use: [
           {
             loader: 'file-loader',
+            options: {
+              outputPath: 'assets',
+            },
           },
         ],
       },	
