@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <!-- <link href="style.css" rel="stylesheet" type="text/css">
-	<link href="normalize.css" rel="stylesheet" type="text/css"> -->
+  <link href="normalize.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
   <!-- <section>
     <h1>Hello World!</h1>
   </section> -->
-  <header class='site-header'> 
+  <header class='site-header'>
     <h1 class='home'>
       <a class='home__link' href="/" rel="home">
         <img src='./assets/logo-zonex.svg' class='home__logo' alt="Zonex logo">
       </a>
-    </h1>   
-    <nav class='navigation'>       
-      <ul class='navigation__list'>                                     
+    </h1>
+    <nav class='navigation'>
+      <ul class='navigation__list'>
         <li class='navigation__item'>
           <a class='navigation__link' href='#'>Home</a>
         </li>
@@ -38,5 +42,91 @@
       </ul>
     </nav>
   </header>
+  <main class='main'>
+
+    <section class='container-fluid slider' >
+      <div id="carouselExample" class="carousel slide slider__bar" data-ride="carousel" data-interval="9000">
+        <div class="carousel-inner row w-10 mxauto slider__row" role="listbox">
+          <div class="carousel-item col-md-4 active">
+            <img class="img-fluid mx-auto d-bloc" src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=1920x550.png" alt="slide 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor sit amet</h5>
+              <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4">
+            <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=1920x550.png" alt="slide 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor sit amet</h5>
+              <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4">
+            <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=1920x550.png" alt="slide 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor sit amet</h5>
+              <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4">
+            <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=1920x550.png" alt="slide 4">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor sit amet</h5>
+              <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4">
+            <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=1920x550.png" alt="slide 5">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor sit amet</h5>
+              <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4">
+            <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=1920x550.png" alt="slide 6">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor sit amet</h5>
+              <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4">
+            <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=1920x550.png" alt="slide 7">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor sit amet</h5>
+              <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="carousel-item col-md-4">
+            <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=1920x550.png" alt="slide 7">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem, ipsum dolor sit amet</h5>
+              <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <i class="fa fa-chevron-left fa-lg text-muted"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+          <i class="fa fa-chevron-right fa-lg text-muted"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
+
