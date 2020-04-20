@@ -13,33 +13,46 @@
 </head>
 
 <body>
-  <!-- <section>
-    <h1>Hello World!</h1>
-  </section> -->
   <header class="site-header">
-    <h1 class="home">
-      <a class="home__link" href="/" rel="home">
-        <img src="./assets/logo-zonex.svg" class="home__logo" alt="Zonex logo">
-      </a>
-    </h1>
+    
     <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Home</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Shop</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Elements</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Blog</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Page</a>
-        </li>
-      </ul>
+      <div class="navigation__main">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Shop</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Elements</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Blog</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Page</a>
+          </li>
+        </ul>
+      </div>  
+      <h1 class="home">
+        <a class="home__link" href="/" rel="home">
+          <img src="./assets/logo-zonex.svg" class="home__logo" alt="Zonex logo">
+        </a>
+      </h1>
+
+      <div class="navigation__user-section">  
+        <a class="navigation__user" href="#" target="_top">
+          <img src="assets/kz-user.svg" class="navigation__sign navigation__sign--user" alt="user sign">
+        </a>
+        <a class="navigation__bag" href="#" target="_top">
+          <img src="assets/kz-bag.svg" class="navigation__sign navigation__sign--bag" alt="bag sign">
+        </a>
+        <a class="navigation__items" href="#" target="_top">
+          <img src="assets/ellipse-1.svg" class="navigation__sign navigation__sign--items" alt="items sign">
+        </a>
+          
+      </div>    
     </nav>
   </header>
   <main class="main">
@@ -301,19 +314,88 @@
       </article>
 
 
-
-
     </section>
 
     <section class="newsletter">
+      <header>Our newsletter</header>
+      <p>Join our list and get 15% off your first purchase!</p>
+      <form action="index.html" method="post" class="subscribe-form">
+        <input type="email" name="email" class="subscribe-input" placeholder="Email Address" autofocus>
+        <button type="submit" class="subscribe-submit">Subscribe</button>
+      </form>
+
+      <p>*Don’t worry we don’t spam</p>
+
+
+      <!-- <section class="subscribe">
+        <div class="subscribe-pitch">
+          <h3>Subscribe</h3>
+          <p>Subscribe to our newsletter to get the latest scoop right to your inbox.<p>
+        </div>
+        <form action="index.html" method="post" class="subscribe-form">
+          <input type="email" name="email" class="subscribe-input" placeholder="Email address" autofocus>
+          <button type="submit" class="subscribe-submit">Subscribe</button>
+        </form>
+      </section> -->
 
     </section>
-
-    <footer class="footer">
-
-    </footer>
-
   </main>
+  <footer class="footer">
+    <section class="social">
+      <a class="social__item social__item--twitter" href="#" target="_top">
+        <img src="assets/kz-twitter.svg" class="social__logo social__logo--twitter" alt="twitter logo">
+      </a>
+      <a class="social__item social__item--facebook"href="#" target="_top">
+        <img src="assets/kz-facebook.svg" class="social__logo social__logo--facebook" alt="facebook logo">
+      </a>
+      <a class="social__item social__item--instagram" href="#" target="_top">
+        <img src="assets/kz-instagram.svg" class="social__logo social__logo--instagram" alt="instagram logo">
+      </a>
+      <a class="social__item social__item--pintrest" href="#" target="_top">
+        <img src="assets/kz-pinterest.svg" class="social__logo social__logo--pinterest" alt="pinterest logo">
+      </a>
+    </section>
+      
+    <section class="policy">
+      <ul class="policy__list">
+        <li class="policy__item">
+          <a class="policy__link" href="#">Returns Policy</a>
+        </li>
+        <li class="policy__item">
+          <a class="policy__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="policy__item">
+          <a class="policy__link" href="#">Privacy Policy</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="settings">
+      <label for="currency">Currency</label>
+      <select id="currency" class="settings__currency">
+        <option value="usd">USD</option>
+        <option value="pln">PLN</option>
+        <option value="eur">EUR</option>
+      </select>
+      <label for="language">Language</label>
+      <select id="language" class="settings__language">      
+        <option value="english">ENGLISH</option>
+        <option value="german">GERMAN</option>
+        <option value="polish">POLISH</option>
+        <option value="russian">RUSSIAN</option>
+      </select>
+    </section>
+
+    <div class="copyright">
+      <p>©2019 Zonex All rights reserved</p>
+    </div>
+
+    <div class="payment">
+      <a class="payment__info" href="#" target="_top">
+        <img src="assets/payment.png" class="payment__logos" alt="payment logos">
+      </a>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
