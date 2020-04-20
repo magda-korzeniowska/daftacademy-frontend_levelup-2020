@@ -1,5 +1,32 @@
 @import url('fonts.css');
 
+$white: #ffffff;
+$black: #151515;
+$very-light-pink: #d7d7d7;
+$dark-grey-blue: #263a49;
+$black-two: #000000;
+$brown-grey: #959595;
+$greyish-brown: #454545;
+$brown-grey-two: #aaaaaa;
+$very-light-pink-two: #eeeeee;
+$tomato: #dc2b2b;
+$greyish-brown-50: rgba(69, 69, 69, 0.5);
+$black-three: #111111;
+$brown-grey-three: #858585;
+$denim: #375973;
+
+@mixin textStyle2 {
+  font-family: Jost;
+  font-size: 48px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: black;
+}
+
 @mixin textStyle4 {
   font-family: Jost;
   font-size: 15px;
@@ -9,7 +36,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #151515;
+  color:$black;
 }
 
 html {
@@ -89,7 +116,15 @@ body {
   }
   &__link {
     text-decoration: none;
-    @include textStyle4;
+    font-family: Jost;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: black;
   }
   &__user {
     margin: 0;
@@ -104,12 +139,126 @@ body {
   }
 }
 
-.new-arrivals{
+.slider {
+  background-color: $dark-grey-blue;
+  height: 438px;
+  width: 100%; 
+}
+
+.new-arrivals {
   min-height: 1487px;
+  &__header {
+    padding-top: 109px;
+    padding-bottom: 107px;
+  }
+  &__title {
+    font-family: Jost;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color:$black;
+    vertical-align: middle;
+  }
+  &__all-products {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  &__all-products-link {
+    width: 70px;
+    height: 14px;
+    padding: 17px 33px;
+    border: solid 2px $black;
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;   
+  }
 }
 
 .newsletter {
   min-height: 406px;
+  &__header {
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
+    margin-top: 90px;
+    margin-bottom: 35px;
+  }
+  &__join {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $greyish-brown;
+    margin-bottom: 80px;
+  }
+  &__section {
+    display: block;
+    text-align: center;
+    // max-width: 649px;
+    // border-bottom: 2px solid $black;
+  }
+  &__form {
+    margin-bottom: 24px;
+  }
+
+  &__input { 
+    opacity: 0.5;
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $greyish-brown-50;
+    border: none;
+    width: 400px;
+  }
+  &__submit {
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: $black;
+    border: none;
+    background-color: $white;
+  }
+  &__spam {
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $greyish-brown;
+  }
 }
 
 .footer {
@@ -188,8 +337,3 @@ Attribution required
 
 }
 
-.slider {
-  background-color: #263a49;
-  height: 438px;
-  width: 100%; 
-}
