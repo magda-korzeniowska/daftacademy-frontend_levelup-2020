@@ -137,14 +137,20 @@ body {
 }
 
 .new-arrivals {
-  min-height: 1487px;
   &__header {
     padding-top: 109px;
     padding-bottom: 107px;
+    @media (max-width: 992px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
   &__title {
     vertical-align: middle;
     @extend .Text-Style-4; 
+  }
+  &__image {
+    max-width: 309px;
   }
   &__all-products {
     text-align: center;
@@ -161,8 +167,10 @@ body {
 }
 
 .product {
-  &__picture {
-    margin-bottom: 25px;
+  border-radius: 0;
+  border: none;
+  &__image {
+    border-radius: 0;
   }
   &__category-name {
     @extend .Text-Style-13;  
