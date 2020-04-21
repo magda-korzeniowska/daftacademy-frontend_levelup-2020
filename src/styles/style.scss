@@ -165,6 +165,7 @@ body {
   }
   &__all-products {
     text-align: center;
+    margin-top: 45px;
     margin-bottom: 100px;
   }
   &__all-products-link {
@@ -183,6 +184,46 @@ body {
     color: $black;   
   }
 }
+
+.product {
+  &__picture {
+    margin-bottom: 25px;
+  }
+  &__category-name {
+    font-family: Jost;
+    font-size: 10px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black-three;
+  }  
+  &__description {
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $greyish-brown;
+  }
+  &__price {
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black;
+  }
+}
+
 
 .newsletter {
   min-height: 406px;
@@ -258,12 +299,105 @@ body {
     letter-spacing: normal;
     text-align: center;
     color: $greyish-brown;
+    margin-bottom: 97px;
   }
 }
 
 .footer {
   min-height: 150px;
+  
+  &__stuff {
+    display: flex;
+    max-width: 1920px;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 40px;
+    margin-left: 15.5%;
+    margin-right: 15.5%;
+  }  
+  &__notes {
+    display: flex;
+    max-width: 1920px;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 22px;
+    margin-left: 15.5%;
+    margin-right: 15.5%;
+  } 
 }
+
+.social {
+  flex: 1;
+}
+
+.policy {
+  flex: 1;
+  margin-right: 10%;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  &__item {
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    // text-align: left;
+  }
+  &__link {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.settings {
+  flex: 1;
+  &__label {
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $brown-grey-three;
+  }
+  &__select {
+    font-family: Jost;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $black;
+  }
+}
+
+.copyrights {
+  font-family: Jost;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $black;
+}
+
+
+
+
 
 /*
 
