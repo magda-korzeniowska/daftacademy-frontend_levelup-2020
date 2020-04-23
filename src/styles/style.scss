@@ -349,6 +349,17 @@ body {
   @extend .Text-Style-6;
 }
 
+.scroll {
+  // display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  color: $denim;
+  cursor: pointer;
+}
+
 /*
 
 CC 2.0 License Iatek LLC 2018
