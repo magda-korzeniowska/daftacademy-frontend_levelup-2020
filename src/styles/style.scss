@@ -34,14 +34,14 @@ body {
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
+  // @media (max-width: 992px) {
+  //   position: relative;
+  // }
+  // @media (max-width: 992px) {
+  //   background-image: url("https://via.placeholder.com/375x292/d7d7d7/959595?Text=375x292.png");
+  //   height: 292px;
+  // }
   @media (max-width: 992px) {
-    position: relative;
-  }
-  @media (max-width: 992px) {
-    background-image: url("https://via.placeholder.com/375x292/d7d7d7/959595?Text=375x292.png");
-    height: 292px;
-  }
-  @media (max-width: 768px) {
     background-image: url("https://via.placeholder.com/375x523/d7d7d7/959595?Text=375x523.png");
     height: 523px;
   }
@@ -50,12 +50,12 @@ body {
 .home {
   width: 40%;
   text-align: center;
-  &__logo {
-    vertical-align: unset;
-    @media (max-width: 768px) {
-      width: 98px;
-    }
-  }
+  // &__logo {
+  //   vertical-align: unset;
+  //   @media (max-width: 768px) {
+  //     width: 98px;
+  //   }
+  // }
 }
  
 .navigation {
@@ -75,7 +75,7 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       display: none;
     }
   }
@@ -97,10 +97,10 @@ body {
     margin-right: 0.2rem;
     margin-left: 1rem;
   }
+  // @media (max-width: 992px) {
+  //   display: none;
+  // }
   @media (max-width: 992px) {
-    display: none;
-  }
-  @media (max-width: 768px) {
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
@@ -108,17 +108,26 @@ body {
 }
 
 .image-on-top {
+  // @media (max-width: 992px) {
+  //   position: absolute;
+  //   top: 30%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
   @media (max-width: 992px) {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  @media (max-width: 768px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.main {
+  margin-left: 15.5%;
+  margin-right: 15.5%;
+  @media (max-width: 992px) {
+    margin-left: 4%;
+    margin-right: 4%;
   }
 }
 
@@ -194,6 +203,10 @@ body {
 
 .newsletter {
   min-height: 406px;
+  // @media (max-width: 992px) {
+  //   margin-left: 4%;
+  //   margin-right: 4%;
+  // }
   &__header {
     @extend .Text-Style-9;
     text-align: center;
@@ -236,6 +249,9 @@ body {
     @extend .Text-Style-5;
     text-align: center;
     margin-bottom: 97px;
+    @media (max-width: 992px) {
+      text-align: left; 
+    }
   }
 }
 
@@ -246,12 +262,12 @@ body {
   }
 }
 
-.show-when-very-narrow {
-  display: none;
-  @media (max-width: 768px) {
-    display: inline;
-  }
-}
+// .show-when-very-narrow {
+//   display: none;
+//   @media (max-width: 992px) {
+//     display: inline;
+//   }
+// }
 
 .hide-when-narrow {
   @media (max-width: 992px) {
@@ -261,15 +277,18 @@ body {
 
 .footer {
   min-height: 150px;
-  
+  margin-left: 15.5%;
+  margin-right: 15.5%;
+  @media (max-width: 992px) {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
   &__stuff {
     display: flex;
     max-width: 1920px;
     justify-content: space-between;
     align-content: center;
     margin-bottom: 40px;
-    margin-left: 15.5%;
-    margin-right: 15.5%;
     @media (max-width: 992px) {
       flex-direction: column;
     }
@@ -280,8 +299,6 @@ body {
     justify-content: space-between;
     align-content: center;
     margin-bottom: 22px;
-    margin-left: 15.5%;
-    margin-right: 15.5%;
     @media (max-width: 992px) {
       flex-direction: column;
     }
@@ -297,7 +314,7 @@ body {
   &__logo {
     margin-right: 0.5rem;
     @media (max-width: 992px) {
-      margin-right: 3rem;
+      margin-right: 2rem;
     }  
   }
 }
@@ -313,11 +330,14 @@ body {
     justify-content: space-between;
     align-content: center;
     list-style-type: none;
-    padding: 0;
+    padding: 0.25rem 0 0 0;
     margin-bottom: 0;
   }
   &__item {
     @extend .Text-Style-7;
+    @media (max-width: 992px) {
+      font-size: 12px;
+    }
   }
   &__link {
     text-decoration: none;
@@ -357,7 +377,10 @@ body {
   width: 50px;
   height: 50px;
   color: $denim;
-  cursor: pointer;
+  cursor: pointer;  
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 
 /*

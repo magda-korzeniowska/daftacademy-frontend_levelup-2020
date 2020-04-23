@@ -18,16 +18,16 @@ ready(function addScroll() {
   })
 })
 
-ready(function hideScroll() {
-  window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
-    {
-      scrollToTopBtn.style.display = "block";
-    } else {
-      scrollToTopBtn.style.display = "none";
-    }   
-  }
-})
+// ready(function hideScroll() {
+//   window.onscroll = function() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+//     {
+//       scrollToTopBtn.style.display = "block";
+//     } else {
+//       scrollToTopBtn.style.display = "none";
+//     }   
+//   }
+// })
 
 
 
