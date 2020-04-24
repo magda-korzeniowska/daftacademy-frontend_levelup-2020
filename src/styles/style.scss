@@ -190,6 +190,9 @@ body {
   padding-left: 0;
   padding-right: 0;
   min-height: 450px;
+  &__card {
+    padding: 0;
+  }
   &__name {
     @extend .Text-Style-17;
   }
@@ -220,9 +223,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // @media (max-width: 992px) {
-    //   align-items: flex-start;
-    // }
   }
   &__subscribe {
     width: 60%;
@@ -241,10 +241,6 @@ body {
     @extend .Text-Style-12;
     border: none;
     flex: 1;
-    // width: 600px;
-    // @media (max-width: 992px) {
-    //   width: 200px;
-    // }
   }
   &__submit {
     @extend .Text-Style-12;
@@ -254,11 +250,6 @@ body {
   &__spam {
     @extend .Text-Style-5;
     padding-top: 15px;
-    // text-align: center;
-    // margin-bottom: 97px;
-    // @media (max-width: 992px) {
-    //   text-align: left; 
-    // }
   }
 }
 
@@ -306,7 +297,7 @@ body {
 }
 
 .social {
-  width: 18%;
+  flex: 1;
   @media (max-width: 992px) {
     width: 100%;
     margin-bottom: 35px;
@@ -320,7 +311,7 @@ body {
 }
 
 .policy {
-  width: 44%;
+  flex: 1;
   @media (max-width: 992px) {
     width: 100%;
     margin-bottom: 40px;
@@ -348,7 +339,7 @@ body {
 .settings {
   display: flex;
   justify-content: flex-end;
-  width: 37%;
+  flex: 1;
   @media (max-width: 992px) {
     width: 100%;
     justify-content: space-between;
