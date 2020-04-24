@@ -34,13 +34,6 @@ body {
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
-  // @media (max-width: 992px) {
-  //   position: relative;
-  // }
-  // @media (max-width: 992px) {
-  //   background-image: url("https://via.placeholder.com/375x292/d7d7d7/959595?Text=375x292.png");
-  //   height: 292px;
-  // }
   @media (max-width: 992px) {
     background-image: url("https://via.placeholder.com/375x523/d7d7d7/959595?Text=375x523.png");
     height: 523px;
@@ -50,12 +43,6 @@ body {
 .home {
   width: 40%;
   text-align: center;
-  // &__logo {
-  //   vertical-align: unset;
-  //   @media (max-width: 768px) {
-  //     width: 98px;
-  //   }
-  // }
 }
  
 .navigation {
@@ -97,9 +84,6 @@ body {
     margin-right: 0.2rem;
     margin-left: 1rem;
   }
-  // @media (max-width: 992px) {
-  //   display: none;
-  // }
   @media (max-width: 992px) {
     display: flex;
     margin-left: 20px;
@@ -108,12 +92,6 @@ body {
 }
 
 .image-on-top {
-  // @media (max-width: 992px) {
-  //   position: absolute;
-  //   top: 30%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  // }
   @media (max-width: 992px) {
     position: absolute;
     top: 40%;
@@ -132,15 +110,33 @@ body {
 }
 
 .slider {
+  display: flex;
+  text-align: center;
+  align-items: center;
   background-color: $dark-grey-blue;
   height: 438px;
-  width: 100%; 
-  &__title {
+  width: 100%;
+  &__container {
+    width: 69%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__controls {
+    &--left {
+      width: 15.5%;
+    }
+    &--right {
+      width: 15.5%
+    }
+  }
+
+  &__item-description {
     @extend .Text-Style-5;
   }
-  &__price {
+  &__item-price {
     @extend .Text-Style-7;
   }
+  
 }
 
 .new-arrivals {
@@ -192,6 +188,8 @@ body {
 }
 
 .category {
+  padding-left: 0;
+  padding-right: 0;
   min-height: 450px;
   &__name {
     @extend .Text-Style-17;
@@ -200,13 +198,8 @@ body {
     @extend .Text-Style-13;
   }
 }
-
 .newsletter {
   min-height: 406px;
-  // @media (max-width: 992px) {
-  //   margin-left: 4%;
-  //   margin-right: 4%;
-  // }
   &__header {
     @extend .Text-Style-9;
     text-align: center;
@@ -261,13 +254,6 @@ body {
     display: inline;
   }
 }
-
-// .show-when-very-narrow {
-//   display: none;
-//   @media (max-width: 992px) {
-//     display: inline;
-//   }
-// }
 
 .hide-when-narrow {
   @media (max-width: 992px) {
@@ -370,7 +356,6 @@ body {
 }
 
 .scroll {
-  // display: none;
   position: fixed;
   right: 10px;
   bottom: 10px;
@@ -382,76 +367,3 @@ body {
     display: none;
   }
 }
-
-/*
-
-CC 2.0 License Iatek LLC 2018
-Attribution required
-
-*/
-
-@media (min-width: 768px) {
-
-  /* show 3 items */
-  .carousel-inner .active,
-  .carousel-inner .active + .carousel-item,
-  .carousel-inner .active + .carousel-item + .carousel-item {
-      display: block;
-  }
-  
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-      transition: none;
-      margin-right: initial;
-  }
-  
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-    position: relative;
-    transform: translate3d(0, 0, 0);
-  }
-  
-  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -33.3333%;
-      z-index: -1;
-      display: block;
-      visibility: visible;
-  }
-  
-  /* left or forward direction */
-  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-  .carousel-item-next.carousel-item-left + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-  }
-  
-  /* farthest right hidden item must be abso position for animations */
-  .carousel-inner .carousel-item-prev.carousel-item-right {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      display: block;
-      visibility: visible;
-  }
-  
-  /* right or prev direction */
-  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-  .carousel-item-prev.carousel-item-right + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
-  }
-
-}
-

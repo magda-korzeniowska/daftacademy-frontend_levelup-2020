@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,6 +39,7 @@
           </li>
         </ul>
       </div>  
+
       <h1 class="home">
         <a class="home__link" href="/" rel="home">
           <img src="./assets/logo-zonex.svg" class="home__logo" alt="Zonex logo">
@@ -58,94 +58,79 @@
         </a>         
       </div>   
     </nav>
+
     <div>
       <img src="assets/vector-smart-object.png" class="image-on-top show-when-narrow" alt="summer icon">
     </div>
   </header>
 
-  <main class="main">
-
-    <section class="container-fluid slider">
-      <div id="carouselExample" class="carousel slide slider__bar" data-ride="carousel" data-interval="9000">
-        <div class="carousel-inner row w-10 mxauto slider__row" role="listbox">
-          <div class="carousel-item col-md-3 active slider__item">
-            <img class="img-fluid mx-auto d-bloc slider__item-image"
-              src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" alt="slide 1">
-            <div class="carousel-caption d-none d-md-block slider__description">
-              <h5 class="slider__title">Lorem, ipsum dolor sit amet</h5>
-              <p class="slider__price">Lorem, ipsum dolor sit amet</p>
-            </div>
-          </div>
-          <div class="carousel-item col-md-3 slider__item">
-            <img class="img-fluid mx-auto d-block slider__item-image"
-              src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" alt="slide 2">
-            <div class="carousel-caption d-none d-md-block slider__description">
-              <h5 class="slider__title">Lorem, ipsum dolor sit amet</h5>
-              <p class="slider__price">Lorem, ipsum dolor sit amet</p>
-            </div>
-          </div>
-          <div class="carousel-item col-md-3 slider__item">
-            <img class="img-fluid mx-auto d-block slider__item-image"
-              src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" alt="slide 3">
-            <div class="carousel-caption d-none d-md-block slider__description">
-              <h5 class="slider__title">Lorem, ipsum dolor sit amet</h5>
-              <p class="slider__price">Lorem, ipsum dolor sit amet</p>
-            </div>
-          </div>
-          <div class="carousel-item col-md-3 slider__item">
-            <img class="img-fluid mx-auto d-block slider__item-image"
-              src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" alt="slide 4">
-            <div class="carousel-caption d-none d-md-block slider__description">
-              <h5 class="slider__title">Lorem, ipsum dolor sit amet</h5>
-              <p class="slider__price">Lorem, ipsum dolor sit amet</p>
-            </div>
-          </div>
-          <div class="carousel-item col-md-3 slider__item">
-            <img class="img-fluid mx-auto d-block slider__item-image"
-              src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" alt="slide 5">
-            <div class="carousel-caption d-none d-md-block slider__description">
-              <h5 class="slider__title">Lorem, ipsum dolor sit amet</h5>
-              <p class="slider__price">Lorem, ipsum dolor sit amet</p>
-            </div>
-          </div>
-          <div class="carousel-item col-md-3 slider__item">
-            <img class="img-fluid mx-auto d-block slider__item-image"
-              src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" alt="slide 6">
-            <div class="carousel-caption d-none d-md-block slider__description">
-              <h5 class="slider__title">Lorem, ipsum dolor sit amet</h5>
-              <p class="slider__price">Lorem, ipsum dolor sit amet</p>
-            </div>
-          </div>
-          <div class="carousel-item col-md-3 slider__item">
-            <img class="img-fluid mx-auto d-block slider__item-image"
-              src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" alt="slide 7">
-            <div class="carousel-caption d-none d-md-block slider__description">
-              <h5 class="slider__title">Lorem, ipsum dolor sit amet</h5>
-              <p class="slider__price">Lorem, ipsum dolor sit amet</p>
-            </div>
-          </div>
-          <div class="carousel-item col-md-3 slider__item">
-            <img class="img-fluid mx-auto d-block slider__item-image"
-              src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" alt="slide 7">
-            <div class="carousel-caption d-none d-md-block slider__description">
-              <h5 class="slider__title">Lorem, ipsum dolor sit amet</h5>
-              <p class="slider__price">Lorem, ipsum dolor sit amet</p>
-            </div>
+  <section class="slider">
+    <div class="slider__controls slider__controls--left">
+      <a class="slider__left" href="#">
+        <img src="assets/left-arrow.svg" class="slider__icon slider__icon--left" alt="left arrow">
+      </a>
+    </div>
+    
+    <div class="container slider__container">
+      <div class="row slider__row">
+        <div class="col-lg-3 col-sm-6 col-6 slider__col">
+          <div class="card mb-2 slider__card">
+            <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text pb-1 slider__item-description">Description</h5>
+              <p class="card-text slider__item-price">$</p>
+            </div> 
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
+        
+        <div class="col-lg-3 col-sm-6 col-6 slider__col">
+          <div class="card mb-2 slider__card">
+            <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text pb-1 slider__item-description">Description</h5>
+              <p class="card-text slider__item-price">$</p>
+            </div> 
+          </div>
+        </div>
+      
+        <div class="col-lg-3 d-none d-lg-block slider__col">
+          <div class="card mb-2 slider__card">
+            <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text pb-1 slider__item-description">Description</h5>
+              <p class="card-text slider__item-price">$</p>
+            </div> 
+          </div>
+        </div>
+
+        <div class="col-lg-3 d-none d-lg-block slider__col">
+          <div class="card mb-2 slider__card">
+            <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <p class="card-text pb-1 slider__item-description">Description</h5>
+              <p class="card-text slider__item-price">$</p>
+            </div> 
+          </div>
+        </div>  
+      </div> 
+    </div>
+
+    <div class="slider__controls slider__controls--right">
+      <a class="slider__right" href="#">
+        <img src="assets/right-arrow.svg" class="slider__icon slider__icon--right" alt="right arrow">
+      </a>
+    </div>
+
+  </section>
+
+  <main class="main">
 
     <section class='new-arrivals'>
+
       <header class="new-arrivals__header">
         <h2 class="new-arrivals__title">New Arrivals</h2>
       </header>
+
       <article class="container new-arrivals__grid">
         <div class="row new-arrivals__row">
           <div class="col-lg-3 col-sm-6 col-6 new-arrivals__col">
@@ -158,6 +143,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-3 col-sm-6 col-6 new-arrivals__col">
             <div class="card mb-4 product">
               <img src="https://via.placeholder.com/309x390/d7d7d7/959595?Text=309x390.png" class="card-img-top product__image" alt="product image">
@@ -168,6 +154,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-3 col-sm-6 col-6 new-arrivals__col">
             <div class="card mb-4 product">
               <img src="https://via.placeholder.com/309x390/d7d7d7/959595?Text=309x390.png" class="card-img-top product__image" alt="product image">
@@ -178,6 +165,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-3 col-sm-6 col-6 new-arrivals__col">
             <div class="card mb-4 product">
               <img src="https://via.placeholder.com/309x390/d7d7d7/959595?Text=309x390.png" class="card-img-top product__image" alt="product image">
@@ -189,6 +177,7 @@
             </div>
           </div>
         </div>
+
         <div class="row new-arrivals__row">
           <div class="col-lg-3 col-sm-6 col-6 new-arrivals__col">
             <div class="card mb-4 product">
@@ -200,6 +189,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-3 col-sm-6 col-6 new-arrivals__col">
             <div class="card mb-4 product">
               <img src="https://via.placeholder.com/309x390/d7d7d7/959595?Text=309x390.png" class="card-img-top product__image" alt="product image">
@@ -210,6 +200,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-3 col-sm-6 col-6 new-arrivals__col">
             <div class="card mb-4 product">
               <img src="https://via.placeholder.com/309x390/d7d7d7/959595?Text=309x390.png" class="card-img-top product__image" alt="product image">
@@ -220,6 +211,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-3 col-sm-6 col-6 new-arrivals__col">
             <div class="card mb-4 product">
               <img src="https://via.placeholder.com/309x390/d7d7d7/959595?Text=309x390.png" class="card-img-top product__image" alt="product image">
@@ -231,6 +223,7 @@
             </div>
           </div>
         </div>
+
         <div class="new-arrivals__all-products">
           <a href="#" class="new-arrivals__all-products-link"><span class="hide-when-narrow">All products</span><span class="show-when-narrow">View all products</span></a>
         </div> 
@@ -248,8 +241,10 @@
             </div>       
           </div>
         </div>
+
         <div class="col-lg-6 col-sm-12 category__col">
           <div class="row category__row">
+
             <div class="col-lg-6 col-sm-12 category__col">
               <div class="card mb-2 category__class">
                 <img src="https://via.placeholder.com/380x310/d7d7d7/959595?Text=380x310.png" class="img-fluid category__image" alt="product image">
@@ -259,6 +254,7 @@
                 </div>       
               </div>
             </div>
+
             <div class="col-lg-6 col-sm-12 category__col">
               <div class="card mb-2 category__class">
                 <img src="https://via.placeholder.com/380x310/d7d7d7/959595?Text=380x310.png" class="img-fluid category__image" alt="product image">
@@ -268,8 +264,9 @@
                 </div>       
               </div>
             </div>
+
             <div class="col-12 category__col">
-              <div class="card mt-md-4 category__class">
+              <div class="card mt-lg-4 category__class">
                 <img src="https://via.placeholder.com/769x310/d7d7d7/959595?Text=769x310.png" class="img-fluid category__image" alt="product image">
                 <div class="card-img-overlay">
                   <h5 class="card-title pt-3 pl-3 category__name">Category</h5>
@@ -283,7 +280,10 @@
     </section>
    
     <section class="newsletter">
-      <header class="newsletter__header"><span class="hide-when-narrow">Our newsletter</span><span class="show-when-narrow">Newsletter</span></header>
+
+      <header class="newsletter__header"><span class="hide-when-narrow">
+        Our newsletter</span><span class="show-when-narrow">Newsletter</span>
+      </header>
       <p class="newsletter__join">Join our list and get 15% off your first purchase!</p>
       <div class="newsletter__section">
         <form action="index.html" method="post" class="newsletter__form">
@@ -293,11 +293,11 @@
       </div>
       <p class="newsletter__spam">*Don’t worry we don’t spam</p>
     </section>
-
   </main>
 
   <footer class="footer">
     <div class="footer__stuff">
+
       <div class="social">
         <a class="social__item social__item--twitter" href="#" target="_top">
           <img src="assets/kz-twitter.svg" class="social__logo social__logo--twitter" alt="twitter logo">
@@ -360,12 +360,12 @@
       </div>
     </div>   
   </footer>
+
   <div class="scroll">
     <span class="scroll__top-inner">
       <i class="scroll__icon far fa-arrow-alt-circle-up"></i>
     </span>
   </div>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -376,5 +376,4 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
