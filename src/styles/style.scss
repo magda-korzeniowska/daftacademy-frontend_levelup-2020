@@ -27,6 +27,8 @@ body {
   min-height: 100vh;
 }
 
+/******HEADER******/
+
 .site-header {
   background-image: url("https://via.placeholder.com/1920x550/d7d7d7/959595?Text=1920x550.png");
   max-width: 1920px;
@@ -40,10 +42,21 @@ body {
   }
 }
 
+.image-on-top {
+  @media (max-width: 992px) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .home {
   width: 40%;
   text-align: center;
 }
+
+/******NAVIGATION******/
  
 .navigation {
   display: flex;
@@ -51,7 +64,7 @@ body {
   justify-content: space-between;
   max-width: 1920px;
   margin-left: 15.5%;
-  margin-right: 15.5%;
+  margin-right: 15.5%;  
   &__main {
     width: 30%;
   }
@@ -91,23 +104,7 @@ body {
   }
 }
 
-.image-on-top {
-  @media (max-width: 992px) {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.main {
-  margin-left: 15.5%;
-  margin-right: 15.5%;
-  @media (max-width: 992px) {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-}
+/******SLIDER******/
 
 .slider {
   display: flex;
@@ -137,6 +134,19 @@ body {
   }
   
 }
+
+/******MAIN******/
+
+.main {
+  margin-left: 15.5%;
+  margin-right: 15.5%;
+  @media (max-width: 992px) {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+/******NEW ARRIVALS******/
 
 .new-arrivals {
   &__header {
@@ -186,6 +196,8 @@ body {
   }
 }
 
+/******CATEGORY******/
+
 .category {
   padding-left: 0;
   padding-right: 0;
@@ -200,6 +212,9 @@ body {
     @extend .Text-Style-13;
   }
 }
+
+/******NEWSLETTER******/
+
 .newsletter {
   min-height: 406px;
   &__header {
@@ -253,18 +268,7 @@ body {
   }
 }
 
-.show-when-narrow {
-  display: none;
-  @media (max-width: 992px) {
-    display: inline;
-  }
-}
-
-.hide-when-narrow {
-  @media (max-width: 992px) {
-    display: none;
-  }
-}
+/******FOOTER******/
 
 .footer {
   min-height: 150px;
@@ -360,6 +364,8 @@ body {
   @extend .Text-Style-6;
 }
 
+/******OTHERS******/
+
 .scroll {
   position: fixed;
   right: 10px;
@@ -368,6 +374,19 @@ body {
   height: 50px;
   color: $denim;
   cursor: pointer;  
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.show-when-narrow {
+  display: none;
+  @media (max-width: 992px) {
+    display: inline;
+  }
+}
+
+.hide-when-narrow {
   @media (max-width: 992px) {
     display: none;
   }
