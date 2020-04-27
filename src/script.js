@@ -6,9 +6,11 @@ function ready(fn) {
   }
 }
 
+// ******* SCROLL TO TOP *******
+
 const scrollToTopBtn = document.querySelector(".scroll");
 
-ready(function addScroll() {
+ready(function addScroll() { 
   scrollToTopBtn.addEventListener("click", function() {
     window.scroll({
       top: 0,
@@ -28,18 +30,26 @@ ready(function hideScroll() {
   }
 })
 
-let year = document.querySelector(".copyrights__year");
+// ******* ADD YEAR *******
 
 ready(function addYear() {
+  let year = document.querySelector(".copyrights__year");
   year.innerHTML = new Date().getFullYear();
 })
 
+// ******* SHOW ALL PRODUCTS *******
 
-
-
-
-
-
+ready(function showAll() {
+  const showAllBtn = document.querySelector(".new-arrivals__all-products-link");
+  const newArrivalsCols = document.querySelectorAll(".new-arrivals__col");
+  showAllBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    for (let i = 0; i < newArrivalsCols.length; i++) {
+      newArrivalsCols[i].classList.remove("d-none");
+    }
+  showAllBtn.style.display = "none";
+  })
+})
 
 
 
