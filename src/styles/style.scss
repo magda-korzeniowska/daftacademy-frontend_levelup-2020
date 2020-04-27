@@ -119,6 +119,7 @@ body {
     border-radius: 0;
   }
   &__container {
+    width: 69%;
     padding-left: 0;
     padding-right: 0;
   }
@@ -133,11 +134,7 @@ body {
   }
   &__item-price {
     @extend .Text-Style-7;
-  }
-  &__item-image {
-    border-radius: 0;
-  }
-  
+  }  
 }
 
 /******MAIN******/
@@ -145,7 +142,7 @@ body {
 .main {
   margin-left: 15.5%;
   margin-right: 15.5%;
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     margin-left: 4%;
     margin-right: 4%;
   }
@@ -165,8 +162,6 @@ body {
   &__grid {
     padding-left: 0;
     padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
   }
   &__title {
     text-align: center;
@@ -213,7 +208,7 @@ body {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  min-height: 450px;
+  min-height: 400px;
   &__col {
     padding: 5px;
   }
@@ -238,6 +233,10 @@ body {
 
 .newsletter {
   min-height: 406px;
+  @media (max-width: 992px) {
+    font-size: 16px;
+    font-weight: bold; 
+  }
   &__header {
     @extend .Text-Style-9;
     text-align: center;
@@ -297,7 +296,7 @@ body {
   min-height: 150px;
   margin-left: 15.5%;
   margin-right: 15.5%;
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     margin-left: 4%;
     margin-right: 4%;
   }
