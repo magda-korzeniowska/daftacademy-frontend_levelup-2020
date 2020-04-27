@@ -31,7 +31,6 @@ body {
 
 .site-header {
   background-image: url("https://via.placeholder.com/1920x550/d7d7d7/959595?Text=1920x550.png");
-  max-width: 1920px;
   height: 550px;
   background-size: cover; 
   background-repeat: no-repeat;
@@ -116,8 +115,10 @@ body {
   &__row {
     flex-wrap: nowrap;
   }
+  &__card {
+    border-radius: 0;
+  }
   &__container {
-    width: 69%;
     padding-left: 0;
     padding-right: 0;
   }
@@ -132,6 +133,9 @@ body {
   }
   &__item-price {
     @extend .Text-Style-7;
+  }
+  &__item-image {
+    border-radius: 0;
   }
   
 }
@@ -158,9 +162,15 @@ body {
       padding-bottom: 60px;
     }
   }
+  &__grid {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
   &__title {
-    vertical-align: middle;
-    @extend .Text-Style-4; 
+    text-align: center;
+    @extend .Text-Style-2; 
   }
   &__image {
     max-width: 309px;
@@ -186,7 +196,7 @@ body {
     border-radius: 0;
   }
   &__category-name {
-    @extend .Text-Style-13;  
+    @extend .Text-Style-14;  
     text-align: left;
   }  
   &__description {
@@ -200,11 +210,21 @@ body {
 /******CATEGORY******/
 
 .category {
-  padding-left: 0;
-  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
   min-height: 450px;
+  &__col {
+    padding: 5px;
+  }
+  &__col-big {
+    padding: 0 15px;
+  }
   &__card {
     padding: 0;
+  }
+  &__class {
+    border-radius: 0;
   }
   &__name {
     @extend .Text-Style-17;
@@ -272,6 +292,8 @@ body {
 /******FOOTER******/
 
 .footer {
+  padding-top: 43px;
+  border-top: 1px solid $very-light-pink-two;
   min-height: 150px;
   margin-left: 15.5%;
   margin-right: 15.5%;
