@@ -113,18 +113,19 @@ body {
   background-color: $dark-grey-blue;
   height: 438px;
   width: 100%;
+  &__row {
+    flex-wrap: nowrap;
+  }
   &__container {
     width: 69%;
     padding-left: 0;
     padding-right: 0;
   }
-  &__controls {
-    &--left {
-      width: 15.5%;
-    }
-    &--right {
-      width: 15.5%
-    }
+  &__left {
+    left: -20%;
+  }
+  &__right {
+    right: -20%;
   }
   &__item-description {
     @extend .Text-Style-5;

@@ -63,64 +63,116 @@
       <img src="assets/vector-smart-object.png" class="image-on-top show-when-narrow" alt="summer icon">
     </div>
   </header>
-
+  
   <section class="slider">
-    <div class="slider__controls slider__controls--left">
-      <a class="slider__left" href="#">
-        <img src="assets/left-arrow.svg" class="slider__icon slider__icon--left" alt="left arrow">
-      </a>
-    </div>
-    
     <div class="container slider__container">
-      <div class="row slider__row">
-        <div class="col-lg-3 col-sm-6 col-6 slider__col">
-          <div class="card mb-2 slider__card">
-            <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
-            <div class="card-img-overlay d-flex flex-column justify-content-end">
-              <p class="card-text pb-1 slider__item-description">Description</h5>
-              <p class="card-text slider__item-price">$</p>
-            </div> 
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-sm-6 col-6 slider__col">
-          <div class="card mb-2 slider__card">
-            <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
-            <div class="card-img-overlay d-flex flex-column justify-content-end">
-              <p class="card-text pb-1 slider__item-description">Description</h5>
-              <p class="card-text slider__item-price">$</p>
-            </div> 
-          </div>
-        </div>
       
-        <div class="col-lg-3 d-none d-lg-block slider__col">
-          <div class="card mb-2 slider__card">
-            <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
-            <div class="card-img-overlay d-flex flex-column justify-content-end">
-              <p class="card-text pb-1 slider__item-description">Description</h5>
-              <p class="card-text slider__item-price">$</p>
-            </div> 
-          </div>
+      <div id="sliderControls" class="carousel slide slider__carousel">
+        <div class="slider__controls slider__controls--left">
+          <a class="carousel-control-prev slider__left" href="#sliderControls" role="button" data-slide="prev">
+            <img src="assets/left-arrow.svg" class="slider__icon slider__icon--left" alt="left arrow">
+            <span class="sr-only">Previous</span>
+          </a>
         </div>
+        <div class="slider__controls slider__controls--right">
+          <a class="carousel-control-next slider__right" href="#sliderControls" role="button" data-slide="next">
+            <img src="assets/right-arrow.svg" class="slider__icon slider__icon--right" alt="right arrow">
+            <span class="sr-only">Next</span>
+          </a>
+        </div> 
+      
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+            <div class="row slider__row">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 slider__col">
+                <div class="card mb-2 slider__card">
+                  <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <p class="card-text pb-1 slider__item-description">Description</h5>
+                    <p class="card-text slider__item-price">$</p>
+                  </div> 
+                </div>
+              </div>
 
-        <div class="col-lg-3 d-none d-lg-block slider__col">
-          <div class="card mb-2 slider__card">
-            <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
-            <div class="card-img-overlay d-flex flex-column justify-content-end">
-              <p class="card-text pb-1 slider__item-description">Description</h5>
-              <p class="card-text slider__item-price">$</p>
-            </div> 
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 slider__col">
+                <div class="card mb-2 slider__card">
+                  <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <p class="card-text pb-1 slider__item-description">Description</h5>
+                    <p class="card-text slider__item-price">$</p>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 slider__col">
+                <div class="card mb-2 slider__card">
+                  <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <p class="card-text pb-1 slider__item-description">Description</h5>
+                    <p class="card-text slider__item-price">$</p>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 slider__col">
+                <div class="card mb-2 slider__card">
+                  <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <p class="card-text pb-1 slider__item-description">Description</h5>
+                    <p class="card-text slider__item-price">$</p>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row slider__row">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 slider__col">
+                <div class="card mb-2 slider__card">
+                  <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <p class="card-text pb-1 slider__item-description">Description</h5>
+                    <p class="card-text slider__item-price">$</p>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 slider__col">
+                <div class="card mb-2 slider__card">
+                  <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <p class="card-text pb-1 slider__item-description">Description</h5>
+                    <p class="card-text slider__item-price">$</p>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 slider__col">
+                <div class="card mb-2 slider__card">
+                  <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <p class="card-text pb-1 slider__item-description">Description</h5>
+                    <p class="card-text slider__item-price">$</p>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 slider__col">
+                <div class="card mb-2 slider__card">
+                  <img src="https://via.placeholder.com/268x338/d7d7d7/959595?Text=268x338.png" class="img-fluid slider__item-image" alt="product image">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <p class="card-text pb-1 slider__item-description">Description</h5>
+                    <p class="card-text slider__item-price">$</p>
+                  </div> 
+                </div>
+              </div>
+            </div>
           </div>
         </div>  
-      </div> 
+      </div>
     </div>
-
-    <div class="slider__controls slider__controls--right">
-      <a class="slider__right" href="#">
-        <img src="assets/right-arrow.svg" class="slider__icon slider__icon--right" alt="right arrow">
-      </a>
-    </div>
-
   </section>
 
   <main class="main">
