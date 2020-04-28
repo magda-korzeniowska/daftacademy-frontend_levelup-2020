@@ -3,7 +3,7 @@
 const addScroll = () => {
   const scrollToTopBtn = document.querySelector(".scroll");
 
-  scrollToTopBtn.addEventListener("click", () => {
+  scrollToTopBtn.addEventListener('click', () => {
     window.scroll({
       top: 0,
       left: 0,
@@ -11,16 +11,16 @@ const addScroll = () => {
     });
   })
 
-  window.onscroll = () => {
+  window.addEventListener('scroll', () => {
     if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
       scrollToTopBtn.style.display = "block";
     } else {
       scrollToTopBtn.style.display = "none";
     }
-  }
+  })
 }
 
-// ******* ADD YEAR *******
+// ******* ADD YEAR IN FOOTER *******
 
 const addYear = () => {
   let year = document.querySelector(".copyrights__year");

@@ -176,12 +176,16 @@ body {
     margin-top: 45px;
     margin-bottom: 100px;
   }
-  &__all-products-link {
-    width: 70px;
-    height: 14px;
-    padding: 17px 33px;
+  &__all-products-btn {
+    width: 136px;
+    height: 48px;
+    background-color: $white;
     border: solid 2px $black;
-    @extend .Text-Style-13;  
+    @extend .Text-Style-13; 
+    &:hover {
+      color: $white;     
+      background-color: $very-light-pink;
+    } 
   }
 }
 
