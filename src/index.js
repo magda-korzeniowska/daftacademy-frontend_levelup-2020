@@ -1,5 +1,10 @@
-import init from './script.js'
+import { addScroll, addYear, showAll } from './script.js'
 import './styles/style.scss';
 import './styles/normalize.css';
 
-ready(init);
+document.addEventListener('DOMContentLoaded', () => {
+	addScroll();
+	addYear();
+	showAll();
+});
+
