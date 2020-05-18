@@ -153,42 +153,60 @@ const carousel = (products) => {
 
 const addNewArrivals = (products) => {
 
-    const productsGrid = document.querySelector(".new-arrivals__row");
-    const showAllBtn = document.querySelector(".new-arrivals__all-products");
-    const itemsOnPage = 8;
-    
-    const addProducts = (start, end) => {
-      let items = products.slice(start, end);
-      for (let i = 1; i < items.length + 1; i++) {
-        insertGridItem(items[i - 1].imageUrl, items[i - 1].name, items[i - 1].price, items[i - 1].currency);
-      }
-    
-      function insertGridItem(imageUrl, name, price, currency) {
-        let result = 
-          `
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3 new-arrivals__col">
-            <div class="card mb-4 product">
-              <img src="http://${imageUrl}" class="card-img-top product__image" alt="product image">
-              <div class="class-body">
-                <h5 class="card-title pt-3 product__category"></h5>
-                <p class="card-text product__description">${name}</p>
-                <p class="card-text product__price">${price} ${currency}</p>
-              </div>
-            </div>
-          </div>
-          `
-    
-        productsGrid.innerHTML += result
-      }
+  const productsGrid = document.querySelector(".new-arrivals__row");
+  const showAllBtn = document.querySelector(".new-arrivals__all-products");
+  const itemsOnPage = 8;
+  
+  const addProducts = (start, end) => {
+    let items = products.slice(start, end);
+    for (let i = 1; i < items.length + 1; i++) {
+      insertGridItem(items[i - 1].imageUrl, items[i - 1].name, items[i - 1].price, items[i - 1].currency);
     }
   
-    addProducts(0, itemsOnPage);
-    
-    showAllBtn.addEventListener("click", () => {
-      addProducts(itemsOnPage, products.length)
-      showAllBtn.classList.add("d-none")
-    })  
+    function insertGridItem(imageUrl, name, price, currency) {
+      let result = 
+        `
+        <div class="col-6 col-sm-6 col-md-3 col-lg-3 new-arrivals__col">
+          <div class="card mb-4 product">
+            <img src="http://${imageUrl}" class="card-img-top product__image" alt="product image">
+            <div class="class-body">
+              <h5 class="card-title pt-3 product__category"></h5>
+              <p class="card-text product__description">${name}</p>
+              <p class="card-text product__price">${price} ${currency}</p>
+            </div>
+          </div>
+        </div>
+        `
+  
+      productsGrid.innerHTML += result
+    }
   }
 
-export { addScroll, addYear, fetchData, carousel, addNewArrivals };
+  addProducts(0, itemsOnPage);
+  
+  showAllBtn.addEventListener("click", () => {
+    addProducts(itemsOnPage, products.length)
+    showAllBtn.classList.add("d-none")
+  })  
+}
+
+const addCategory = (products) => {
+
+  const categories = document.querySelectorAll(".category__col");
+  
+  products.map((product, category) => {
+    categories[category].innerHTML += 
+      `
+      <div class="card category__class">
+        <img src="http://${product.imageUrl}"  class="img-fluid category__image" alt="product image">
+        <div class="card-img-overlay category__card">
+          <h5 class="card-title pt-3 pl-3 category__name">${product.name}</h5>
+          <a href="#" class="card-link pl-3 category__shop">Shop now</a>
+        </div>       
+      </div>  
+      ` 
+  })
+}
+
+export { addScroll, addYear, fetchData, carousel, addNewArrivals, addCategory };
 
