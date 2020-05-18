@@ -232,6 +232,9 @@ body {
   &__shop {
     @extend .Text-Style-13;
   }
+  &__image {
+    object-fit: cover;
+  }
 }
 
 /******NEWSLETTER******/

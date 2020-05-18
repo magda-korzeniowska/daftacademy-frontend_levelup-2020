@@ -20,6 +20,7 @@ const addScroll = () => {
   })
 }
 
+
 // ******* ADD YEAR IN FOOTER *******
 
 const addYear = () => {
@@ -27,36 +28,6 @@ const addYear = () => {
   year.innerHTML = new Date().getFullYear();
 }
 
-// ******* SHOW ALL PRODUCTS *******
-
-// const showAll = () => {
-//   const showAllBtn = document.querySelector(".new-arrivals__all-products");
-//   let otherProducts = 3;
-
-//   const loadAll = (otherProducts) => {
-//     let productsGrid = document.querySelector(".new-arrivals__row");
-//     for (let i = 0; i < otherProducts; i++) {
-//       productsGrid.innerHTML +=
-//       `
-//       <div class="col-6 col-sm-6 col-md-3 col-lg-3 new-arrivals__col">
-//         <div class="card mb-4 product">
-//           <img src="https://via.placeholder.com/309x390/d7d7d7/959595?Text=309x390.png" class="card-img-top product__image" alt="product image">
-//           <div class="class-body">
-//             <h5 class="card-title pt-3 product__category">Category</h5>
-//             <p class="card-text product__description">Lorem ipsum dolor sed do eiusmod tempor incididunt ut labore et ...</p>
-//             <p class="card-text product__price">$</p>
-//           </div>
-//         </div>
-//       </div>
-//       `
-//     }
-//   }
-
-//   showAllBtn.addEventListener("click", () => {
-//     loadAll(otherProducts);
-//     showAllBtn.classList.add("d-none")
-//   })
-// }
 
 // ******* FETCH DATA *******
 
@@ -103,8 +74,8 @@ const fetchData = () => {
             resolve(productsData);
           })
       })
-      .catch(err => {
-        window.alert(`An error occurred while trying to fetch data: ${error}`)
+      .catch(err => { 
+        reject();
       })
     })  
 }
@@ -132,7 +103,6 @@ const carousel = (products) => {
     } else {
       document.getElementById(`slider__row-${setCount}`).innerHTML += (insertCards(products[i - 1].imageUrl, products[i - 1].name, products[i - 1].price, products[i - 1].currency));
     }
-    
   }
 
   function insertCarouselItem(isActive, set) {
@@ -163,6 +133,7 @@ const carousel = (products) => {
     return result;   
   }
 }
+
 
 // ******* NEW ARRIVALS *******
 
@@ -205,6 +176,9 @@ const addNewArrivals = (products) => {
   })  
 }
 
+
+// ******* CATEGORIES *******
+
 const addCategory = (products) => {
 
   const categories = document.querySelectorAll(".category__col");
@@ -224,4 +198,6 @@ const addCategory = (products) => {
 }
 
 export { addScroll, addYear, fetchData, carousel, addNewArrivals, addCategory };
+
+
 

@@ -3,6 +3,7 @@ import './styles/style.scss';
 import './styles/normalize.css';
 
 document.addEventListener('DOMContentLoaded', () => {
+	window.scrollTo(0,0);
 	fetchData()
 		.then(res => {
 			console.log(res);
