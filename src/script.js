@@ -60,7 +60,21 @@ const addYear = () => {
 
 // ******* FETCH DATA *******
 
+const spinner = document.getElementById("spinner");
+
+const showSpinner = () => {
+  spinner.className = "show";
+  setTimeout(() => {
+    spinner.className = spinner.className.replace("show", "");
+  }, 5000);
+}
+
+const hideSpinner = () => {
+  spinner.className = spinner.className.replace("show", "");
+}
+
 const fetchData = () => {
+  showSpinner();
   return new Promise ((resolve, reject) => {
     
     fetch("https://asos2.p.rapidapi.com/products/v2/list?country=US&currency=USD&sort=freshness&lang=en-US&sizeSchema=US&offset=0&categoryId=4209&limit=48&store=US", {
@@ -71,6 +85,7 @@ const fetchData = () => {
       }
     })
       .then(res => {
+        hideSpinner()
         let productsData = []
         res.json()
           .then(data => ({

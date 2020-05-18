@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			addNewArrivals(res.slice(8, 48));
 			addCategory((res.slice(44, 48)));
 		})
-	//  .catch(err => {
-  //     window.alert(`An error occurred while trying to fetch data: ${error}`)
-  //   })
+	 .catch(err => {
+      window.alert(`An error occurred while trying to fetch data. Try again later`)
+    })
 	addScroll();
 	addYear();
 });
